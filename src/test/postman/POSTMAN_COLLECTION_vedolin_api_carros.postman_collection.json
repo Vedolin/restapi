@@ -1,0 +1,211 @@
+{
+	"info": {
+		"_postman_id": "6137eeff-97af-4693-8c3e-8f26e2b64881",
+		"name": "vedolin_api_carros",
+		"description": "Simple tests to a crud rest api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "buscaTodosCarros",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/carros",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"carros"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "buscaCarroPorModelo",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/carros/search/findByModelo?modelo=Fusca",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"carros",
+						"search",
+						"findByModelo"
+					],
+					"query": [
+						{
+							"key": "modelo",
+							"value": "Fusca"
+						}
+					]
+				},
+				"description": "Buscar um carro por seu modelo\nFusca, Corsa, Chevette"
+			},
+			"response": []
+		},
+		{
+			"name": "buscaCarro 1002",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/carros/1002",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"carros",
+						"1002"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "atuaizarCarro 1002 -> Ferrari",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"modelo\": \"Ferrari\",\r\n  \"dataCompra\": \"1996-07-12\",\r\n  \"valor\": 586948\r\n  }\r\n  \r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/carros/1002",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"carros",
+						"1002"
+					]
+				},
+				"description": "Atauliza um carro por id\n"
+			},
+			"response": []
+		},
+		{
+			"name": "removerCarro 1005",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/carros/1005",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"carros",
+						"1005"
+					]
+				},
+				"description": "Remove carro pelo id"
+			},
+			"response": []
+		},
+		{
+			"name": "criarCarro",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"modelo\": \"Caravan\",\r\n  \"dataCompra\": \"1996-07-12\",\r\n  \"valor\": 586948\r\n  }\r\n  ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/carros",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"carros"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "buscaTodosCarros  novamente",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/carros",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"carros"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
