@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<jardesc>
+    <jar path="C:/Users/lvedolin/Desktop/restapi.jar"/>
+    <options buildIfNeeded="true" compress="true" descriptionLocation="/restapi/create_jar.jardesc" exportErrors="true" exportWarnings="true" includeDirectoryEntries="false" overwrite="false" saveDescription="true" storeRefactorings="false" useSourceFolders="false"/>
+    <storedRefactorings deprecationInfo="true" structuralOnly="false"/>
+    <selectedProjects/>
+    <manifest generateManifest="true" mainClassHandleIdentifier="=restapi/src\/main\/java&lt;com.vedolin.itlab{RestapiApplication.java[RestapiApplication" manifestLocation="/restapi/METAINF/MANIFEST.MF" manifestVersion="1.0" reuseManifest="false" saveManifest="true" usesManifest="true">
+        <sealing sealJar="true">
+            <packagesToSeal/>
+            <packagesToUnSeal/>
+        </sealing>
+    </manifest>
+    <selectedElements exportClassFiles="true" exportJavaFiles="false" exportOutputFolder="false">
+        <file path="/restapi/.classpath"/>
+        <file path="/restapi/create_jar.jardesc"/>
+        <javaElement handleIdentifier="=restapi/src\/test\/java"/>
+        <file path="/restapi/HELP.md"/>
+        <file path="/restapi/mvnw"/>
+        <file path="/restapi/.gitignore"/>
+        <folder path="/restapi/target"/>
+        <file path="/restapi/.project"/>
+        <javaElement handleIdentifier="=restapi/src\/main\/java"/>
+        <file path="/restapi/pom.xml"/>
+        <javaElement handleIdentifier="=restapi/src\/main\/resources"/>
+        <file path="/restapi/mvnw.cmd"/>
+        <folder path="/restapi/src"/>
+    </selectedElements>
+</jardesc>
